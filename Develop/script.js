@@ -23,3 +23,10 @@ function writePassword() {
   const isUppercase = confirm("DO you want Uppercase");
   // ask if want number
   const isNumber = confirm("DO you want Number");
+
+  if(!isLowercase && !isSymbols && !isUppercase && !isNumber){
+    alert('Please select at least one criteria')
+    return writePassword();
+  }
+
+  
